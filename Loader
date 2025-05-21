@@ -4,4 +4,7 @@ if tostring(game.GameId) == "6793832056" then
 elseif tostring(game.GameId) == "6471449680" then
     -- Verse Piece
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/VersePiece.lua'))()
+elseif tostring(game.GameId) == "7229111549" then
+    -- Another Piece
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/AnotherPiece.lua'))()
 end

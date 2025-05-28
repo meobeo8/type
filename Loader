@@ -10,4 +10,7 @@ elseif tostring(game.GameId) == "7229111549" then
 elseif tostring(game.GameId) == "7450400063" then
     -- Dead Planets
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/DeadPlanets.lua'))()
+elseif tostring(game.GameId) == "7516718402" then
+    -- Noob Must Die
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/NoobMustDie.lua'))()
 end

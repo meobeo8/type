@@ -16,4 +16,7 @@ elseif tostring(game.GameId) == "7516718402" then
 elseif tostring(game.GameId) == "6161049307" then
     -- Pixel Blade
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/PixelBlade.lua'))()
+elseif tostring(game.GameId) == "6682461205" then
+    -- Pixel Blade
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/UniversalPiece.lua'))()
 end

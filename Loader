@@ -1,3 +1,4 @@
+game.Players.LocalPlayer:Kick("wait")
 if tostring(game.GameId) == "6793832056" then
     -- Rock Fruit
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/RockFruit.lua'))()

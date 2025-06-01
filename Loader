@@ -7,16 +7,7 @@ elseif tostring(game.GameId) == "6471449680" then
 elseif tostring(game.GameId) == "7229111549" then
     -- Another Piece
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/AnotherPiece.lua'))()
-elseif tostring(game.GameId) == "7450400063" then
-    -- Dead Planets
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/DeadPlanets.lua'))()
-elseif tostring(game.GameId) == "7516718402" then
-    -- Noob Must Die
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/NoobMustDie.lua'))()
-elseif tostring(game.GameId) == "6161049307" then
-    -- Pixel Blade
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/PixelBlade.lua'))()
 elseif tostring(game.GameId) == "6682461205" then
-    -- Pixel Blade
+    -- Universal Piece
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/UniversalPiece.lua'))()
 end

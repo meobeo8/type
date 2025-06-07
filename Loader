@@ -10,4 +10,7 @@ elseif tostring(game.GameId) == "7229111549" then
 elseif tostring(game.GameId) == "6682461205" then
     -- Universal Piece
     loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/main/UniversalPiece.lua'))()
+elseif tostring(game.GameId) == "5184146090" then
+    -- Second Piece
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/meobeo8/type/mainSecondPiece.lua'))()
 end

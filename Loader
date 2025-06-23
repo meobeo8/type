@@ -5,6 +5,7 @@ local _gatolist = {
     ["7229111549"] = "AnotherPiece.lua",
     ["6682461205"] = "UniversalPiece.lua",
     ["5184146090"] = "SecondPiece.lua",
+    ["7195714746"] = "CrossPiece.lua",
 }
 
 local _gatoname = _gatolist[tostring(game.GameId)]

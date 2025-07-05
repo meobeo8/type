@@ -1,5 +1,3 @@
-repeat wait() until game.isLoaded()
-
 if script_key and script_key ~= "" then
     if tostring(game.GameId) == "6471449680" then -- Verse Piece
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d3469dff83f934a912f6f1290c39757e.lua"))()

@@ -1,0 +1,13 @@
+repeat wait() until game.isLoaded()
+
+if script_key and script_key ~= "" then
+    if tostring(game.GameId) == "6471449680" then -- Verse Piece
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d3469dff83f934a912f6f1290c39757e.lua"))()
+
+    elseif tostring(game.GameId) == "6682461205" then -- Universal Piece
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d0b8871ae320126b65ff337e2f17576.lua"))()
+
+    elseif tostring(game.GameId) == "5184146090" then -- Second Piece
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2f3011da463dcf4bb204bf68f7309261.lua"))()
+    end
+end

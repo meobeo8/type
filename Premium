@@ -10,5 +10,8 @@ if script_key and script_key ~= "" then
 
     elseif tostring(game.GameId) == "6574335189" then -- Aether Adventure
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8e97d6e4470d0e3013c05e2f9110a09c.lua"))()
+
+    elseif tostring(game.GameId) == "7174773198" then -- Vox Seas
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2509150e01d886e919dc85422d62cdb9.lua"))()
     end
 end

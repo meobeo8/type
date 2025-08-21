@@ -5,9 +5,6 @@ if script_key and script_key ~= "" then
     elseif tostring(game.GameId) == "6682461205" then -- Universal Piece
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2d0b8871ae320126b65ff337e2f17576.lua"))()
 
-    elseif tostring(game.GameId) == "5184146090" then -- Second Piece
-        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2c56c6956421e044b3324af2c03cdcd6.lua"))()
-
     elseif tostring(game.GameId) == "6574335189" then -- Aether Adventure
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8e97d6e4470d0e3013c05e2f9110a09c.lua"))()
 
@@ -16,5 +13,8 @@ if script_key and script_key ~= "" then
 
     elseif tostring(game.GameID) == "6884266247" then -- Anime Rangers X
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/54fcc083677ab5d51a2be3527dcfc2b5.lua"))()
+
+    elseif tostring(game.GameID) == "7750955984" then -- Hunty Zombies
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c602efd40f6e26d6232d5081943208cc.lua"))()
     end
 end

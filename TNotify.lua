@@ -13,7 +13,7 @@ if not getgenv().TNotify then
 
     local GUI = Instance.new("ScreenGui")
     GUI.Name = "TNotify"
-    GUI.Parent = game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
+    GUI.Parent = game:GetService("Players") and game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
     getgenv().TNotify.ScreenGui = GUI
 
     local T = getgenv().TNotify

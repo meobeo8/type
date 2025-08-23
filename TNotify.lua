@@ -8,15 +8,17 @@ local function RandomName(length)
     return key
 end
 
-if not _G.tNotify then
-    _G.tNotify = {Actives = {}, Spacing = 10, NotifyHeight = 100, TweenTime = 0.25}
+if not getgenv().TNotify then
+    getgenv().TNotify = {Actives = {}, Spacing = 10, NotifyHeight = 100, TweenTime = 0.25}
 
     local GUI = Instance.new("ScreenGui")
     GUI.Name = "TNotify"
     GUI.Parent = game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
-    _G.tNotify.ScreenGui = GUI
+    getgenv().TNotify.ScreenGui = GUI
 
-    function _G.tNotify:updatePositions()
+    local T = getgenv().TNotify
+
+    function T:updatePositions()
         for i, frame in ipairs(self.Actives) do
             local targetY = 20 + (i - 1) * (self.NotifyHeight + self.Spacing)
             game:GetService("TweenService"):Create(frame, TweenInfo.new(self.TweenTime, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
@@ -25,7 +27,7 @@ if not _G.tNotify then
         end
     end
 
-    function _G.tNotify:Send(titleText, description, duration)
+    function T:Send(titleText, description, duration)
         duration = duration or 5
         local frame = Instance.new("Frame")
         frame.Name = RandomName(20)
@@ -116,7 +118,7 @@ end
 local TNotify = {}
 
 function TNotify:Send(titleText, description, duration)
-    _G.tNotify:Send(titleText, description, duration)
+    getgenv().TNotify:Send(titleText, description, duration)
 end
 
 return TNotify

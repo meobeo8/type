@@ -1,3 +1,6 @@
+local plr = game:GetService("Players").LocalPlayer or game.Players.PlayerAdded:Wait()
+local plrGUI = plr:WaitForChild("PlayerGui")
+
 local function RandomName(length)
     local text = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     local key = ""
@@ -13,7 +16,7 @@ if not getgenv().TNotify then
 
     local GUI = Instance.new("ScreenGui")
     GUI.Name = "TNotify"
-    GUI.Parent = game:GetService("Players") and game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer:FindFirstChildOfClass("PlayerGui")
+    GUI.Parent = plrGUI
     getgenv().TNotify.ScreenGui = GUI
 
     local T = getgenv().TNotify
